@@ -1,0 +1,22 @@
+
+*{
+    box-sizing: border-box; /*con esto incluimos los px en los % (1)*/
+}
+
+.container{
+    border: 1px solid black;
+    display: inline; /*los div son bloques, con esto se convierten a inline*/
+    display: inline-block; /*para que se pongan inline manteniendo block*/
+}
+
+/* (1) ojo que lo que agregamos en px, no se contempla dentro del analisis por %*/
+
+.left{
+    width: 30%; /* no es posible usar esto con inline elementos, por eso pasamos a inline-block*/
+    color: blue;
+}
+
+.right{
+    width: 70%;
+    color: red;
+}

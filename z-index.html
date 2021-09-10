@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Practice</title>
+
+
+<style>
+
+/* para usar z-index tienen que tener position, sino no funciona, el que tiene mayor valor va arriba de todos*/
+div{
+    position: fixed;
+    padding: 15px;
+    border: 1px solid black;
+    color: white;
+}
+
+.containerA{
+    background-color: blue;
+    top: 25px;
+    width: 8%;
+    z-index: 10;
+}
+
+.containerB{
+    background-color: red;
+    top: 35px;
+    width: 15%;
+    z-index: 8;
+}
+
+.containerC{
+    background-color: green;
+    top: 0;
+    width: 10%;
+    z-index: 5;
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="containerA">
+        Container A
+    </div>
+    <div class="containerB">
+        Container B
+    </div>
+    <div class="containerC">
+        Container C
+    </div>
+    
+</body>
+</html>
